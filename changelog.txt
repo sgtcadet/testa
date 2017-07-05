@@ -1,0 +1,27 @@
+Change log for NightVisionMediaLtd
+
+To do:
+	-- Nav bar device specifications (Media)
+	-- Add more button to services on main page
+
+--Version 1.0.0.0 Howard:
+	---CHANGES:
+		-- Services section background color to: #2db0fe
+		-- page Title to "MyNVML"
+		-- Move Services icons above the service
+
+
+	---ADDED:
+		-- Favicon
+		-- css property : text-align: center => .row => style.css
+		-- Footer logo name && footer css properties .internal-links,footer-logo => custom.css
+
+	---REMOVED: 
+		-- Subscribe New Letter section (on services page)
+		-- Text under service title (on index page, services section)
+		-- Services section second column (on index page)
+		-- Services section background gradient
+		-- css property : float, margin => .features .item .icon => Features-Blue.css
+		-- css property :padding => .features-blue .item => Features-Blue.css 
+
+ 	---FIXED:

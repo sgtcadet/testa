@@ -1,0 +1,35 @@
+
+/*
+*
+*SERVICES*/
+.services-content a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+/*FOOTER*/
+.internal-links,.footer-contacts,.footer-about
+{
+	text-align: left;
+}
+.footer-logo
+{
+	padding: 0;
+}
+
+/**/
+.brands
+{
+	text-align: center;
+}
+.brands > a
+{
+	display: inline-block;
+}
+
+/**/
+.social-icons a
+{
+	display: inline-block;
+}
