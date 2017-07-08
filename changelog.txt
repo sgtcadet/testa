@@ -3,6 +3,8 @@ Change log for NightVisionMediaLtd
 To do:
 	-- Nav bar device specifications (Media)
 	-- Add more button to services on main page
+	-- Make events clickable and launch registration page
+	-- Add partners
 
 --Version 1.0.0.0 Howard:
 	---CHANGES:
@@ -15,6 +17,7 @@ To do:
 		-- Favicon
 		-- css property : text-align: center => .row => style.css
 		-- Footer logo name && footer css properties .internal-links,footer-logo => custom.css
+		--Buttons to Event section on services pages
 
 	---REMOVED: 
 		-- Subscribe New Letter section (on services page)
