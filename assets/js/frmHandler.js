@@ -6,6 +6,6 @@ $(document).ready(function()
 	$(".events-button").click(function()
 	{
 		$("#frm-section").show();
-		window.location.href = "#topSec";
+		//window.location.href = "#topSec";
 	});
 });
