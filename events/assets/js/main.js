@@ -51,12 +51,15 @@ $('#registration-form').submit(function(e){
             url       : './assets/php/register.php',
             data      : postForm,
             dataType  : 'json',
-            success   : function(data) {
+            success   : function(data,status,result) {
                             if (data.success) {
+                            //if (status == 'success') {
                                 $('#registration-msg .alert').html("Registration Successful");
                                 $('#registration-msg .alert').removeClass("alert-danger");
                                 $('#registration-msg .alert').addClass("alert-success");
                                 $('#registration-msg').show();
+                                //$('#reg-form-title').html("<h1>" + result + "</h1>");
+                                alert('Thank You for registering!!');
                             }
                             else
                             {

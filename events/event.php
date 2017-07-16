@@ -22,9 +22,12 @@
                     <a class="logo" href="index.html">
                         
                         <!-- logo image  -->
-                        <img src="assets/images/logo.png" alt="Logo">
+                        <!-- <img src="assets/images/logo.png" alt="Logo">
 
-                        Conference 2015
+                        Conference 2015 -->
+                        <img src="assets/images/nvmlogo.png" width="70" height="38" alt="Logo">
+
+                        Night Vision Media
                     </a>
                 </div>
 
@@ -278,7 +281,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h3 class="section-title">Registration &amp; Pricing</h3>
+                    <h3 id="reg-form-title" class="section-title">Registration &amp; Pricing</h3>
                 </div>
             </div>
                 
