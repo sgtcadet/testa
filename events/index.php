@@ -22,5 +22,23 @@
     <span>Speacker(s)</span>
     <span>Time</span>
     <span>Venue</span>
+
+    <?php
+        $salt = random_bytes(5);
+
+        echo "<p>Salt is : $salt </p>";
+
+        var_dump(bin2hex($salt));
+
+        // $options = [
+        //     'cost' => 12,
+        // ];
+
+        // $string = "mypassword";
+        
+        // $hashed_password = password_hash($string,PASSWORD_BCRYPT,$options);
+
+        // echo "<h1>".$hashed_password."</h1>";
+    ?>
 </body>
 </html>
