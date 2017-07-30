@@ -67,7 +67,8 @@
   margin:22px auto 0;
   line-height:1;
   display:block;
-  color:#4f86c3;
+  /*color:#4f86c3;*/
+  color:#2db0fe;
   opacity:0.85;
   transition:opacity 0.2s;
   text-decoration:none;

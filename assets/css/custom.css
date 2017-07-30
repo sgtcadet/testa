@@ -1,14 +1,28 @@
+
+.hero-button
+{
+  background-color: #2db0fe;
+  border:none;
+}
+
 /********************
 *		NAV
 *********************/
 
-.navbar-nav>.active a,.navbar-nav>.active a:hover, .navbar-nav> li a:hover
+.navbar-nav>.active a,.navbar-nav>.active a:hover, .navbar-nav> li a:hover, .navbar-nav>li>.active
 {
 	border:none;
 	border-bottom: 1px solid #2db0fe;
 }
 
-
+/********************
+*		LOCATION
+*********************/
+.cell-container,.cell-container >i
+{
+  padding: .5em;
+  color: #7d8285;
+}
 
 /*
 *
@@ -34,7 +48,9 @@
 }
 .events-button
 {
-	margin-top: .5em;
+  margin-top: .5em;
+  background-color: #2db0fe;
+  border: none;
 }
 
 /*FOOTER*/

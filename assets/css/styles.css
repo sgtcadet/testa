@@ -76,7 +76,12 @@ html, body {
 }
 
 .features-blue {
+  /*
+  -REMOVED BY HOWARD
   margin-bottom:70px;
+  */
+  /*ADDED BY HOWARD*/
+  margin-bottom: 0;
   padding-bottom:60px;
 }
 

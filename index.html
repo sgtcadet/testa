@@ -59,19 +59,22 @@
             -->
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active" role="presentation"><a href="index.html" style="color:rgb(251,252,252);">Home </a></li>
-                    <li role="presentation"><a href="#aboutus" style="color:rgb(251,252,252);">About Us</a></li>
-                    <li role="presentation"><a href="#contact" style="color:rgb(254,254,255);">Contact Us</a></li>
-                    <li role="presentation"><a href="services.php" style="color:rgb(252,253,255);">Services </a></li>
-                    <li role="presentation"><a href="education.html" style="color:rgb(252,253,255);">Education </a></li>
+                    <!-- <li class="active" role="presentation"><a href="index.html" style="color:rgb(251,252,252);">Home </a></li> -->
+                    <li role="presentation"><a class="active"  href="#home" style="color:rgb(251,252,252);">Home </a></li>
+                    <li role="presentation"><a class="" href="#services" style="color:rgb(252,253,255);">Services </a></li> 
+                    <li role="presentation"><a class="" href="#aboutus" style="color:rgb(251,252,252);">About Us</a></li>
+                    <li role="presentation"><a class="" href="#contact" style="color:rgb(254,254,255);">Contact Us</a></li>
+                    <!-- <li role="presentation"><a class="" href="services.php" style="color:rgb(252,253,255);">Services </a></li> -->
+                    <li role="presentation"><a class="" href="education.html" style="color:rgb(252,253,255);">Education </a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="fill">
+    <div id="home" class="fill">
         <div class="carousel slide fill" data-ride="carousel" id="carousel-1">
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
+                    <!-- <div id="home"></div> -->
                     <div class="jumbotron hero-nature carousel-hero fill">
                         <h1 class="hero-title">Hero Nature</h1>
                         <p class="hero-subtitle">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
@@ -102,107 +105,251 @@
             </ol>
         </div>
     </div>
-    <div id="aboutus" style="height:25px"></div>
-    <div class="row-block">
-        <div class="container site-section" data-aos="fade-up" id="who">
-            <div class="row">
-                <div class="col-md-4 item" data-bs-hover-animate="pulse"><i class="glyphicon glyphicon-star"></i>
-                    <h2>OUR MISSION</h2>
-                    <p><strong>Our mission</strong> is to find and utilize the best tools (staff, equipment, and software) to provide quality, creativity, and convenience through our services.&nbsp;</p>
+
+    <!--Services Section-->
+    <div  id="services" >
+        
+        <div data-aos="slide-up" data-aos-delay="150"  class="features-blue">
+            <div class="container">
+                <div style="height:25px"></div>
+                <div class="intro">
+                    <h2 class="text-center" >Our Services </h2>
+                    <!--
+                    <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                    -->
                 </div>
-                <div class="col-md-4 item" data-bs-hover-animate="pulse"><i class="fa fa-history"></i>
-                    <h2>HISTORY </h2>
-                    <p><strong>Night Vision Media Ltd.</strong> started out as a Graphic Design firm and slowly morphed into a complete small business solution
-.&nbsp; </p>
+                <div class="row features services-content">
+                    <div class="col-md-4 col-sm-6 item">
+                        <a href="#">
+                            <i class="fa fa-rocket icon" data-bs-hover-animate="shake"></i>
+                            <h3 class="name">Animation </h3>
+                            <p class="description">Our animation services covers a wide variety of animations.  We develop: PowerPoint and other presentation animations; motion graphic commercials; web animations; and let’s not forget our animated series Abeeku and the maroons (the first of many animated series from Night Vision Media Ltd.)
+                            .</p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 item ">
+                        <a href="#">
+                            <i class="glyphicon glyphicon-education icon" data-bs-hover-animate="shake"></i>
+                            <h3 class="name">Education </h3>
+                            <p class="description">We provide two (2) services through our NV Educate product: Online Extra Lessons; and Teachers’ Assistant Unit.  These services will revolutionize how education is disseminated especially in Jamaica.  Our Online Extra Lessons was created specifically for students pursuing their education at various levels.  The Teachers’ Assistant Unit is the premiere service created to assistant teachers to ensure that they do what they do better.</p>
+                        </a>
+                    
+                    </div>
+                    
+                    <div class="col-md-4 col-sm-6 item">
+                        <a href="#">
+                            <i class="glyphicon glyphicon-briefcase icon"data-bs-hover-animate="shake"></i>
+                            <h3 class="name">Marketing </h3>
+                            <p class="description">All businesses must market their products and services.  But it is particularly difficult for Small Business Owners to find the Time and Money to do so.  Night Vision Media Ltd. has created Office On The Go which caters to that specific need.</p>
+                        </a>
+                
+                    </div>
                 </div>
-                <div class="col-md-4 item" data-bs-hover-animate="pulse"><i class="glyphicon glyphicon-cog"></i>
-                    <h2>WHAT WE DO</h2>
-                    <p><strong>At Night Vision Media</strong> We use our expertise and creativity to come up with the ideal solution for our clients.&nbsp; </p>
-                </div>
-            </div>
+            </div>   
         </div>
-    </div>
-    <div id="services" style="height:15px"></div>
-    <div data-aos="slide-up" data-aos-delay="150"  class="features-blue">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Services </h2>
-                <!--
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
-                -->
-            </div>
-            <div class="row features services-content">
-                <div class="col-md-4 col-sm-6 item">
-                    <a href="#">
-                        <i class="fa fa-rocket icon" data-bs-hover-animate="shake"></i>
-                        <h3 class="name">Animation </h3>
-                        <p class="description">Our animation services covers a wide variety of animations.  We develop: PowerPoint and other presentation animations; motion graphic commercials; web animations; and let’s not forget our animated series Abeeku and the maroons (the first of many animated series from Night Vision Media Ltd.)
-                        .</p>
-                    </a>
+
+        <!--Place Events Here-->
+        <div class="projects-clean">
+            <div class="container">
+                <div class="intro">
+                    <h2 class="text-center">Upcoming Events </h2>
+                    <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
                 </div>
-                
-                <div class="col-md-4 col-sm-6 item ">
-                    <a href="#">
-                        <i class="glyphicon glyphicon-education icon" data-bs-hover-animate="shake"></i>
-                        <h3 class="name">Education </h3>
-                        <p class="description">We provide two (2) services through our NV Educate product: Online Extra Lessons; and Teachers’ Assistant Unit.  These services will revolutionize how education is disseminated especially in Jamaica.  Our Online Extra Lessons was created specifically for students pursuing their education at various levels.  The Teachers’ Assistant Unit is the premiere service created to assistant teachers to ensure that they do what they do better.</p>
-                    </a>
-                
+                <div class="row projects">
+                    <div class="col-md-4 col-sm-6 item">
+                        <a href="#">
+                            <img class="img-responsive" src="assets/img/desk.jpg">
+                            <h3 class="name">Small Business Online Conference by Office On The Go</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                        </a>
+                        <!--<button class="btn btn-primary events-button" type="button">Join Event</button>-->
+                        <a class="btn btn-primary events-button" type="button" href="events/event.php?eventId=321">View Event!</a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 item">
+                        <a href="#">
+                            <img class="img-responsive" src="assets/img/building.jpg">
+                            <h3 class="name">Abeeku and the maroons launch</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                        </a>
+                        <!--<button class="btn btn-primary events-button" type="button">Join Event</button>-->
+                        <a class="btn btn-primary events-button" type="button" href="services.php?eventId=321">View Event!</a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 item">
+                        <a href="#">
+                            <img class="img-responsive" src="assets/img/loft.jpg">
+                            <h3 class="name">NVML 10 Year Celebrations</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                        </a>
+                        <!--<button class="btn btn-primary events-button" type="button">Join Event</button>-->
+                        <a class="btn btn-primary events-button" type="button" href="services.php?eventId=321">View Event!</a>
+                    </div>
+
                 </div>
-                
-                <div class="col-md-4 col-sm-6 item">
-                    <a href="#">
-                        <i class="glyphicon glyphicon-briefcase icon"data-bs-hover-animate="shake"></i>
-                        <h3 class="name">Marketing </h3>
-                        <p class="description">All businesses must market their products and services.  But it is particularly difficult for Small Business Owners to find the Time and Money to do so.  Night Vision Media Ltd. has created Office On The Go which caters to that specific need.</p>
-                    </a>
-               
-                </div>
-                <!--
-                <div class="col-md-3 col-sm-6 item"><i class="glyphicon glyphicon-leaf icon" data-bs-hover-animate="shake"></i>
-                    <h3 class="name">Organic</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                
-                <div class="col-md-4 col-sm-6 item"><i class="glyphicon glyphicon-plane icon" data-bs-hover-animate="shake"></i>
-                    <h3 class="name">Fast</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                
-                <div class="col-md-3 col-sm-6 item"><i class="glyphicon glyphicon-phone icon" data-bs-hover-animate="shake"></i>
-                    <h3 class="name">Mobile-first</h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
-                </div>
-                -->
-            </div>
-        </div>
-    </div>
-    <div data-aos="fade-up" data-aos-duration="550" data-aos-delay="200" class="highlight-phone">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 high-light">
-                    <div class="intro">
-                        <h2>Highlight</h2>
-                        <p>Watch full episodes of Abeeku and the maroons on the new caribbean media online platform.</p><a class="btn btn-primary" role="button" target="_blank" href="http://www.direalwi.com">Watch Now</a></div>
-                </div>
-                <div class="col-sm-4 hidden-xs">
-                    <div class="iphone-mockup">
-                        <img src="assets/img/iphone.svg" class="device" />
-                        <div class="screen"></div>
+                <div class="row projects">
+                    <div class="col-md-6 col-sm-6 item">
+                        <a href="#">
+                            <img class="img-responsive" src="assets/img/minibus.jpeg">
+                            <h3 class="name">StuDate Online Conference by Online Extra Lessons</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                        </a>
+                        <!--<button class="btn btn-primary events-button" type="button">Join Event</button>-->
+                        <a class="btn btn-primary events-button" type="button" href="services.php?eventId=321">View Event!</a>                    
+                    </div>
+
+                    <!--<div class="col-md-4 col-sm-6 "></div>-->
+
+                    <div class="col-md-6 col-sm-6 item">
+                        <a href="#">
+                            <img class="img-responsive" src="assets/img/minibus.jpeg">
+                            <h3 class="name">Tech Teacher Online Conference by The Teachers’ Assistant Unit</h3>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+
+                        </a>
+                        <!--<button class="btn btn-primary events-button" type="button">Join Event</button>-->
+                        <a class="btn btn-primary events-button" type="button" href="services.php?eventId=321">View Event!</a>
                     </div>
                 </div>
             </div>
         </div>
+        <!--Events End-->
     </div>
-    <div class="map-clean">
-        <div class="container">
-            <div class="intro">
-                <h2 class="text-center">Location </h2>
-                <p class="text-center">2 Fairway Avenue, Kingston 6, Jamaica</p>
+    <!--Services Section END-->
+
+    <!--Highlight Section-->
+        <div data-aos="fade-up" data-aos-duration="550" data-aos-delay="200" class="highlight-phone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 high-light">
+                        <div class="intro">
+                            <h2>Highlight</h2>
+                            <p>Watch full episodes of Abeeku and the maroons on the new caribbean media online platform.</p><a class="btn btn-primary" role="button" target="_blank" href="http://www.direalwi.com">Watch Now</a></div>
+                    </div>
+                    <div class="col-sm-4 hidden-xs">
+                        <div class="iphone-mockup">
+                            <img src="assets/img/iphone.svg" class="device" />
+                            <div class="screen"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCKt1Qz_b9XNJ8IZgwW10SqB5ddEFqyNZU&amp;q=Montegobay%2C+Jamaica&amp;zoom=15"></iframe>
-    </div>
+    <!--Highlight Section END-->
+
+
+      <!-- <div style="height:550px"></div> -->
+        <div id="aboutus" >
+            <div class="row-block">
+                
+                <div class="container site-section" data-aos="fade-up" id="who">
+                    <div style="height:25px"></div>
+                    <div class="intro">
+                        <h2 class="text-center" style="padding-top:60px">About Us </h2>
+                        <!--
+                        <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                        -->
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 item" data-bs-hover-animate="pulse"><i class="glyphicon glyphicon-star"></i>
+                            <h2>OUR MISSION</h2>
+                            <p><strong>Our mission</strong> is to find and utilize the best tools (staff, equipment, and software) to provide quality, creativity, and convenience through our services.&nbsp;</p>
+                        </div>
+                        <div class="col-md-4 item" data-bs-hover-animate="pulse"><i class="fa fa-history"></i>
+                            <h2>HISTORY </h2>
+                            <p><strong>Night Vision Media Ltd.</strong> started out as a Graphic Design firm and slowly morphed into a complete small business solution
+                            .&nbsp; </p>
+                        </div>
+                        <div class="col-md-4 item" data-bs-hover-animate="pulse"><i class="glyphicon glyphicon-cog"></i>
+                            <h2>WHAT WE DO</h2>
+                            <p><strong>At Night Vision Media</strong> We use our expertise and creativity to come up with the ideal solution for our clients.&nbsp; </p>
+                        </div>
+                    </div>
+                </div><!--Container end-->   
+            </div>
+
+            <!--Team Section-->
+            <div class="team-clean">
+                <div class="container">
+                    <div class="intro">
+                        <h2 class="text-center">Our Team </h2>
+                        <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                    </div>
+                    <div class="row people">
+                        <!-- <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/1.jpg"> -->
+                        <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/Adrian.jpg">
+                            <h3 class="name">Mr. Adrian Whyte</h3>
+                            <p class="title">Education & Financial Director </p>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. . </p>
+                            <div class="social">
+                                <a href="https://www.facebook.com/whyte.ink" target="_blank" title="Facebook">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                </a>
+                                <a href="#">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.instagram.com/whyte.ink/" target="_blank" title="Instagram">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg"> -->
+                        <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/chevvy.jpg">
+                            <h3 class="name">Mrs. Chevonnese Chevers Whyte</h3>
+                            <p class="title">Marketing, Managing, and Creative Director</p>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. </p>
+                            <div class="social">
+                                <a href="http://chevonnesewhyte.com" target="_blank" title="Website">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://twitter.com/chevyNVML" target="_blank" title="Twitter">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <a href="https://plus.google.com/+ChevonneseCheversWhyteNVML" target="_blank" title="Google+">
+                                    <i class="fa fa-google-plus-official" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.facebook.com/chevonnese.whyte" target="_blank" title="Facebook">
+                                    <i class="fa fa-facebook-official"></i>
+                                </a>
+                                <a href="https://jm.linkedin.com/in/chevonnese-whyte-mba-b-sc-1a841425" target="_blank" title="LinkedIn">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                                <a href="http://chevonnesewhyte.tumblr.com" target="_blank" title="Tumblr">
+                                    <i class="fa fa-tumblr" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/3.jpg"> -->
+                        <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/Kevin.jpg">
+                            <h3 class="name">Mr. Kevin Jackson </h3>
+                            <p class="title">Animation Manager and Vetting Officer </p>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. </p>
+                            <div class="social">
+                                <a href="http://www.nivekfilms.com" target="_blank" title="Website">
+                                    <i class="fa fa-globe" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.facebook.com/nivekfilms/" target="_blank" title="Facebook">
+                                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://twitter.com/NivekEnt" target="_blank" title="Twitter">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                                
+                            </div>
+                        </div>
+                        <!--
+                        <div class="col-md-3 col-sm-6 item"><img class="img-circle" src="assets/img/3.jpg">
+                            <h3 class="name">Howard </h3>
+                            <p class="title">Developer </p>
+                            <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. </p>
+                            <div class="social"><a href="#"><i class="fa fa-facebook-official"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-instagram"></i></a></div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+            <!--TEAM SECTION END-->
+        </div>
+   
     <div id="contact" class="contact-clean" style="background-image:url(&quot;assets/img/desk.jpg&quot;);background-repeat:no-repeat;background-size:cover;background-position:center;">
         <form method="post" class="contact-form" style="background-color:rgba(255,255,255,0.64);">
             <h2 class="text-center">Contact us</h2>
@@ -220,6 +367,60 @@
             </div>
         </form>
     </div>
+
+    <div class="map-clean">
+        <div class="container">
+            <div class="intro">
+                <h2 class="text-center">Location </h2>
+                <p class="text-center">2A Fairway Avenue, Kingston 6, Jamaica</p>
+                <div style="text-align:center">
+                    <span class="cell-container"><i class="fa fa-phone"></i>  +1 876 7927107</span>
+                    <span class="cell-container"><i class="fa fa-phone"></i>  +1 876 8736635</span>
+                </div>
+            </div>
+        </div>
+         <script>
+            function initMap() {
+                //var uluru = {lat: -25.363, lng: 131.044};
+                var uluru = {lat: 18.0091179, lng: -76.7759106};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: uluru
+                });
+                var marker = new google.maps.Marker({
+                position: uluru,
+                map: map,
+                data: "!4m5!3m4!1s0x8edb3f0425e67c1f:0x1a0f5851f79421df!8m2!3d18.009154!4d-76.773652",
+                title: "Night Vision Media Ltd.",
+                animation:google.maps.Animation.BOUNCE
+                });
+            }
+        </script>
+        <div id="map" style="width:100%;height:450px;"></div>
+         <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBoy6lO6zjfvQda-prpF4kjQOe2M6rB0oE&callback=initMap">
+        </script>  
+        
+        <!-- <iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBoy6lO6zjfvQda-prpF4kjQOe2M6rB0oE&amp;q=Night+Vision+Media+Limited/@18.0091179,-76.7759106,16.94z/data=!4m5!3m4!1s0x8edb3f0425e67c1f:0x1a0f5851f79421df!8m2!3d18.009154!4d-76.773652;"></iframe> -->
+        <!-- <iframe allowfullscreen="" frameborder="0" width="100%" height="450" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCKt1Qz_b9XNJ8IZgwW10SqB5ddEFqyNZU&amp;q=Montegobay%2C+Jamaica&amp;zoom=15"></iframe> -->
+    </div>
+    <!-- <div id="contact" class="contact-clean" style="background-image:url(&quot;assets/img/desk.jpg&quot;);background-repeat:no-repeat;background-size:cover;background-position:center;">
+        <form method="post" class="contact-form" style="background-color:rgba(255,255,255,0.64);">
+            <h2 class="text-center">Contact us</h2>
+            <div class="form-group has-success has-feedback">
+                <input class="form-control" type="text" name="name" placeholder="Name"><i class="form-control-feedback glyphicon glyphicon-ok" aria-hidden="true"></i></div>
+            <div class="form-group has-error has-feedback">
+                <input class="form-control" type="email" name="email" placeholder="Email"><i class="form-control-feedback glyphicon glyphicon-remove" aria-hidden="true"></i>
+                <p class="help-block">Please enter a correct email address.</p>
+            </div>
+            <div class="form-group">
+                <textarea class="form-control" rows="14" name="message" placeholder="Message"></textarea>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary" type="submit">send </button>
+            </div>
+        </form>
+    </div> -->
     <div class="brands">
         <h2 class="text-center">Partners</h2>
         <a href="#"> 
@@ -264,10 +465,10 @@
             </div>
             <div class="col-md-4 col-sm-6 footer-contacts">
                 <div><span class="fa fa-map-marker footer-contacts-icon"> </span>
-                    <p><span class="new-line-span">2 Fairway Avenue</span> Kingston 6, Jamaica</p>
+                    <p><span class="new-line-span">2A Fairway Avenue</span> Kingston 6, Jamaica</p>
                 </div>
                 <div><i class="fa fa-phone footer-contacts-icon"></i>
-                    <p class="footer-center-info email text-left"> +1 876 7927107</p>
+                    <p class="footer-center-info email text-left"> +1 876 7927107, +1 876 8736635</p>
                 </div>
                 <div><i class="fa fa-envelope footer-contacts-icon"></i>
                     <p> <a href="#">contact@nightvisionmedia.com</a></p>
@@ -278,7 +479,7 @@
                 <h4>About the company</h4>
                 <p>Night Vision Media Ltd. specializes in creativity.  We evolved from being a graphic design firm, to a company that can provide a creative solution for all of our clients.  Currently our services have been broken down into three (3) categories: Animation; Education; and Marketing.
                 </p>
-                <div class="social-links"><a href="https://www.facebook.com/myNVML"><i class="fa fa-facebook"></i></a><a href="@myNVML"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-github"></i></a></div>
+                <div class="social-links"><a href="https://www.facebook.com/myNVML" target="_blank"><i class="fa fa-facebook"></i></a><a href="https://twitter.com/myNVML" target="_blank"><i class="fa fa-twitter"></i></a><a href="https://www.linkedin.com/company/night-vision-media-ltd" target="_blank"><i class="fa fa-linkedin"></i></a><a href="https://www.instagram.com/mynvml" target="_blank"><i class="fa fa-instagram"></i></a></div>
             </div>
         </div>
     </footer>
@@ -289,6 +490,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-lightbox/0.7.0/bootstrap-lightbox.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     <script src="assets/js/tabbed_slider.js"></script>
+    <script src="assets/js/jsfiddle.js"></script>
     <script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=62925783"></script>
 </body>
 

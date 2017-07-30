@@ -142,19 +142,34 @@
                 <div class="col-md-4 col-sm-6 item">
                     <a href="#"><img class="img-responsive" src="assets/img/desk.jpg"></a>
                     <h3 class="name">Animation </h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
-                    <a href="#" class="action" data-target="#animation" data-toggle="modal"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
+                    <p class="description">
+                        Our animation services covers a wide variety of animations.  We develop: 
+                        PowerPoint and other presentation animations; motion graphic commercials; 
+                        web animations; and let’s not forget our animated series Abeeku and the maroons 
+                        (the first of many animated series from Night Vision Media Ltd.)                    
+                    </p>
+                        <a href="#" class="action" data-target="#animation" data-toggle="modal"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
                 </div>
                 <div class="col-md-4 col-sm-6 item">
                     <a href="#"><img class="img-responsive" src="assets/img/building.jpg"></a>
                     <h3 class="name">Education </h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <p class="description">
+                        We provide two (2) services through our NV Educate product: Online Extra Lessons; 
+                        and Teachers’ Assistant Unit.  These services will revolutionize how education is 
+                        disseminated especially in Jamaica.  Our Online Extra Lessons was created specifically 
+                        for students pursuing their education at various levels.  The Teachers’ Assistant Unit is 
+                        the premiere service created to assistant teachers to ensure that they do what they do better.    
+                    </p>
                     <a href="#" class="action" data-target="#Education" data-toggle="modal"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
                 </div>
                 <div class="col-md-4 col-sm-6 item">
                     <a href="#"><img class="img-responsive" src="assets/img/loft.jpg"></a>
                     <h3 class="name">Marketing </h3>
-                    <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.</p>
+                    <p class="description">
+                        All businesses must market their products and services.  But it is particularly difficult 
+                        for Small Business Owners to find the Time and Money to do so.  Night Vision Media Ltd. has 
+                        created Office On The Go which caters to that specific need.    
+                    </p>
                     <a href="#" class="action" data-target="#Marketing" data-toggle="modal"><i class="glyphicon glyphicon-circle-arrow-right"></i></a>
                 </div>
             </div>
@@ -176,8 +191,11 @@
                         </div>
                     </div>
                     <p class="description">
-    Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit
-</p>
+                        Our animation services covers a wide variety of animations.  We develop: 
+                        PowerPoint and other presentation animations; motion graphic commercials; 
+                        web animations; and let’s not forget our animated series Abeeku and the maroons 
+                        (the first of many animated series from Night Vision Media Ltd.)                    
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
@@ -204,8 +222,12 @@
                         </div>
                     </div>
                     <p class="description">
-    Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit
-</p>
+                        We provide two (2) services through our NV Educate product: Online Extra Lessons; 
+                        and Teachers’ Assistant Unit.  These services will revolutionize how education is 
+                        disseminated especially in Jamaica.  Our Online Extra Lessons was created specifically 
+                        for students pursuing their education at various levels.  The Teachers’ Assistant Unit is 
+                        the premiere service created to assistant teachers to ensure that they do what they do better.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
@@ -232,8 +254,10 @@
                         </div>
                     </div>
                     <p class="description">
-    Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit id.Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, interdum justo suscipit
-</p>
+                         All businesses must market their products and services.  But it is particularly difficult 
+                        for Small Business Owners to find the Time and Money to do so.  Night Vision Media Ltd. has 
+                        created Office On The Go which caters to that specific need.
+                    </p>
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
@@ -242,7 +266,7 @@
             </div>
         </div>
     </div>
-    <div class="attraction">
+    <!-- <div class="attraction">
         <h1 id="add">Like What you see?</h1>
         <p>Check us out on social media or contact us via email for more info</p>
         <div class="container social-icons">
@@ -262,7 +286,7 @@
                 <i class="icon ion-social-youtube"></i>
             </a>
         </div>
-    </div>
+    </div> -->
     <div class="projects-clean">
         <div class="container">
             <div class="intro">
@@ -325,66 +349,71 @@
             </div>
         </div>
     </div>
-    <div class="team-clean" style="background-color:#688eef;">
+
+    
+    <div class="team-clean">
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">Team </h2>
                 <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
             </div>
             <div class="row people">
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/1.jpg">
+                <!-- <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/1.jpg"> -->
+                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/Adrian.jpg">
                     <h3 class="name">Mr. Adrian Whyte</h3>
                     <p class="title">Education & Financial Director </p>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. . </p>
                     <div class="social">
-                        <a href="https://www.facebook.com/whyte.ink" title="Facebook">
+                        <a href="https://www.facebook.com/whyte.ink" target="_blank" title="Facebook">
                             <i class="fa fa-facebook-official" aria-hidden="true"></i>
                         </a>
                         <a href="#">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.instagram.com/whyte.ink/" title="Instagram">
+                        <a href="https://www.instagram.com/whyte.ink/" target="_blank" title="Instagram">
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg">
+                <!-- <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/2.jpg"> -->
+                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/chevvy.jpg">
                      <h3 class="name">Mrs. Chevonnese Chevers Whyte</h3>
                     <p class="title">Marketing, Managing, and Creative Director</p>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. </p>
                     <div class="social">
-                        <a href="http://chevonnesewhyte.com" title="Website">
+                        <a href="http://chevonnesewhyte.com" target="_blank" title="Website">
                             <i class="fa fa-globe" aria-hidden="true"></i>
                         </a>
-                        <a href="https://twitter.com/chevyNVML" title="Twitter">
+                        <a href="https://twitter.com/chevyNVML" target="_blank" title="Twitter">
                             <i class="fa fa-twitter"></i>
                         </a>
-                        <a href="https://plus.google.com/+ChevonneseCheversWhyteNVML" title="Google+">
+                        <a href="https://plus.google.com/+ChevonneseCheversWhyteNVML" target="_blank" title="Google+">
                             <i class="fa fa-google-plus-official" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.facebook.com/chevonnese.whyte" title="Facebook">
+                        <a href="https://www.facebook.com/chevonnese.whyte" target="_blank" title="Facebook">
                             <i class="fa fa-facebook-official"></i>
                         </a>
-                        <a href="https://jm.linkedin.com/in/chevonnese-whyte-mba-b-sc-1a841425" title="LinkedIn">
+                        <a href="https://jm.linkedin.com/in/chevonnese-whyte-mba-b-sc-1a841425" target="_blank" title="LinkedIn">
                             <i class="fa fa-linkedin" aria-hidden="true"></i>
                         </a>
-                        <a href="http://chevonnesewhyte.tumblr.com" title="Tumblr">
+                        <a href="http://chevonnesewhyte.tumblr.com" target="_blank" title="Tumblr">
                             <i class="fa fa-tumblr" aria-hidden="true"></i>
                         </a>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/3.jpg">
+                <!-- <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/3.jpg"> -->
+                <div class="col-md-4 col-sm-6 item"><img class="img-circle" src="assets/img/Kevin.jpg">
                     <h3 class="name">Mr. Kevin Jackson </h3>
                     <p class="title">Animation Manager and Vetting Officer </p>
                     <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. </p>
                     <div class="social">
-                        <a href="http://www.nivekfilms.com">
+                        <a href="http://www.nivekfilms.com" target="_blank" title="Website">
                             <i class="fa fa-globe" aria-hidden="true"></i>
                         </a>
-                        <a href="https://www.facebook.com/nivekfilms/">
+                        <a href="https://www.facebook.com/nivekfilms/" target="_blank" title="Facebook">
                             <i class="fa fa-facebook-official" aria-hidden="true"></i>
                         </a>
-                        <a href="https://twitter.com/NivekEnt">
+                        <a href="https://twitter.com/NivekEnt" target="_blank" title="Twitter">
                             <i class="fa fa-twitter" aria-hidden="true"></i>
                         </a>
                         

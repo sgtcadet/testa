@@ -64,7 +64,8 @@
 }
 
 .highlight-phone .intro .btn-primary {
-  background-color:#055ada;
+  /*background-color:#055ada;*/
+  background-color:#2db0fe;
   color:#fff;
 }
 

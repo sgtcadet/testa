@@ -1,15 +1,16 @@
 <?php
 //require 'assets/php/scripts/Connection.php';
         //echo "<h2>Test</h2>";
-require_once 'assets/php/scripts/Event.php';
+//require_once 'assets/php/scripts/Event.php';
 //$connect = new Connection();
 
 //GET EVENT ID
 $eventID = $_GET['eventId'];
+//echo $eventID;
 
 //CHECK IF EVENT ID IS IN DATABASE
-$event = new Event();
-$event->Select('*',$eventID);
+//$event = new Event();
+//$event->Select('*',$eventID);
 //$event->Select();
 //IF IT IS LOAD THE EVENT'S DATA
 ?>
@@ -76,11 +77,11 @@ $event->Select('*',$eventID);
     <header id="site-header" class="site-header valign-center"> 
         <div class="intro">
 
-            <!-- <h2>25 April, 2015 / Townhall California</h2> -->
-            <h2>25 April, 2015 / <?php echo $event->eventLocation;?></h2>
-            <!-- <h1>Freelancer Conference 2015: <?php //echo $eventID?></h1> -->
-            <h1><?php echo $event->eventTitle .": ". $event->eventID;?></h1>
-            <!-- <h2>Testing: <?php echo $event->eventID;?></h2> -->
+            <h2>25 April, 2015 / Townhall California</h2>
+            <!--<h2>25 April, 2015 / <?php //echo $event->eventLocation;?></h2>-->
+             <h1>Freelancer Conference 2015: <?php echo $eventID?></h1> 
+            <!--<h1><?php //echo $event->eventTitle .": ". $event->eventID;?></h1> -->
+            <!-- <h2>Testing: <?php //echo $event->eventID;?></h2> -->
             <p>First &amp; Largest Conference</p>
             
             <a class="btn btn-white" data-scroll href="#registration">Register Now</a>

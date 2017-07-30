@@ -94,7 +94,8 @@
 }
 
 .contact-clean form .btn-primary {
-  background-color:#055ada !important;
+  /*background-color:#055ada !important;*/
+  background-color: #2db0fe !important;
   margin-top:15px;
   color:#fff;
 }
