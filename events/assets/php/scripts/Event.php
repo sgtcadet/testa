@@ -1,5 +1,6 @@
 <?php
  require_once 'assets/php/scripts/Connection.php';
+ require_once 'assets/php/scripts/Speaker.php';
 
     // $string = "nvml";
     // $connect = new Connection::withDBname($string);
@@ -9,17 +10,27 @@ class Event
 
     //$connect = new Connection::withDBname("nvml");
 
-//     //Event members
-     var $connect            = "";// new Connection();
-     var $eventID            = "";
-     var $eventTitle         = "";
-     var $eventLocation      = "";
-     //var $connect  = new Connection("nvml");
+    //Event members
+    var $connect                    = "";// new Connection();
+    private var $eventID            = "";
+    private var $eventTitle         = "";
+    private var $eventLocation      = "";
+    private var $eventDateTime;
+    private var $eventSubTitle;
+    private var $eventAbout;
+    private var $eventGoal;
+    private var $eventGoalDescription;
+    private Speaker $speaker = new Speaker;
+
+
+
+    //var $connect  = new Connection("nvml");
     function __construct ()
     {
         $this->connect = new Connection("nvml");
     }
     //REMINDER: Fix this block above
+    //Use constructor name
 
     function Select($query,$id)
     {
@@ -28,7 +39,7 @@ class Event
         $result = $this->connect->conn->query($sql);
 
         if(!$result){
-            echo "FUCK THIS SHIT!!!";
+            echo "Error!!!";
         }
         // $data = array();
         // while($data =  $result->mysql_fetch_object($result))
@@ -52,6 +63,8 @@ class Event
         {
             echo "0 results";
         }
+
+        
     }
 
  }
