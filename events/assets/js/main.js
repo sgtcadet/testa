@@ -40,7 +40,9 @@ $('#registration-form').submit(function(e){
     // };
     var postForm = 
     {
-        'fullname'  : $('#registration-form #fullname').val(),
+        //'fullname'  : $('#registration-form #fullname').val(),
+        'firstname' : $('#registration-form #firstname').val(),
+        'lastname'  : $('#registration-form #lastname').val(),
         'email'     : $('#registration-form #email').val(),
         'cell'      : $('#registration-form #cell').val(),
         'event'     : $('#registration-form #event').val(),

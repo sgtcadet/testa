@@ -12,29 +12,56 @@ class Event
 
     //Event members
     var $connect                    = "";// new Connection();
-    private var $eventID            = "";
-    private var $eventTitle         = "";
-    private var $eventLocation      = "";
-    private var $eventDateTime;
-    private var $eventSubTitle;
-    private var $eventAbout;
-    private var $eventGoal;
-    private var $eventGoalDescription;
-    private Speaker $speaker = new Speaker;
+    private  $eventID            = "";
+    private  $eventTitle         = "";
+    private  $eventLocation      = "";
+    private  $eventDateTime;
+    private  $eventSubTitle;
+    private  $eventAbout         ="";
+    private  $eventGoal;
+    private  $eventGoalDescription = "";
+    private  $speaker;
 
+    /*
+    * GETTERS
+    */
+    public function getEventId(){return $this->eventID;}
+    public function getEventTitle(){return $this->eventTitle;}
+    public function getEventLocation(){return $this->eventLocation;}
+    public function getEventDateTime()
+    {
+        return date("d m, Y",strtotime($this->eventDateTime));
+        //return $this->eventDateTime;
+    }
+    public function getEventSubTitle(){return $this->eventSubTitle;}
+    public function getEventAbout(){return $this->eventAbout;}
+    public function getEventGoalDescription(){return $this->eventGoalDescription;}
+    public function getSpeakerInstance(){return $this->speaker;}
+
+    /*
+    * SETTERS
+    */
+    public function setEventId($eventID){ $this->eventID = $eventID;}
+    public function setEventTitle($eventTitle){ $this->eventTitle = $eventTitle;}
+    public function setEventLocation($eventLocation){ $this->eventLocation = $eventLocation;}
+    public function setEventDateTime($eventDateTime){ $this->eventDateTime = $eventDateTime;}
+    public function setEventSubTitle($eventSubTitle){ $this->eventSubTitle = $eventSubTitle;}
+    public function setEventAbout($eventAbout){ $this->eventAbout = $eventAbout;}
+    public function setEventGoalDescription($eventGoalDescription){ $this->eventGoalDescription = $eventGoalDescription;}
 
 
     //var $connect  = new Connection("nvml");
     function __construct ()
     {
         $this->connect = new Connection("nvml");
+        $this->speaker = new Speaker();
     }
     //REMINDER: Fix this block above
-    //Use constructor name
+    //Use class name as constructor name
 
-    function Select($query,$id)
+    function Select($query,$eventID)
     {
-        $sql = "SELECT $query FROM `events` WHERE event_id = '".$id."'";
+        $sql = "SELECT $query FROM `event` WHERE event_id = '$eventID' ;";
         //$sql = "SELECT event_id, event_title, event_location FROM `events`";
         $result = $this->connect->conn->query($sql);
 
@@ -55,13 +82,24 @@ class Event
 
                 $this->eventID = $row['event_id'];
                 $this->eventTitle = $row['event_title'];
+                $this->eventSubTitle = $row['event_sub_title'];
+                $this->eventDateTime = $row['event_date'];
                 $this->eventLocation = $row['event_location'];
+                $this->eventGoalDescription = $row['event_goal_description'];
+                $this->eventAbout = $row['event_about'];
                 //echo "ID: ".$row["event_id"]." Title: ".$row["event_title"]." ".$row["event_location"]."";
             }
+            //GET SPEAKERS
+            $this->speaker->getSpeakers($this->eventID);
+
+            echo $result->num_rows . " results <br>";
+            //GET GOALS
+
+            //GET SPEACKERS
         }
         else
         {
-            echo "0 results";
+            echo "0 results <br>";
         }
 
         

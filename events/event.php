@@ -1,16 +1,22 @@
 <?php
 //require 'assets/php/scripts/Connection.php';
         //echo "<h2>Test</h2>";
-//require_once 'assets/php/scripts/Event.php';
+require_once 'assets/php/scripts/Event.php';
 //$connect = new Connection();
+
+/*
+    * #Event == Conference
+    * #Event has a ID, name,description,image,date,content??.
+    * #Webinar Software : https://www.join.me/solutions/free-webinar-software
+    */
 
 //GET EVENT ID
 $eventID = $_GET['eventId'];
 //echo $eventID;
 
 //CHECK IF EVENT ID IS IN DATABASE
-//$event = new Event();
-//$event->Select('*',$eventID);
+$event = new Event();
+$test = $event->Select('*', $eventID);
 //$event->Select();
 //IF IT IS LOAD THE EVENT'S DATA
 ?>
@@ -77,15 +83,34 @@ $eventID = $_GET['eventId'];
     <header id="site-header" class="site-header valign-center"> 
         <div class="intro">
 
+            <?php
+
+                if(!isset($test)) //REMINDER: FIX THIS CONDITION
+                {
+
+                
+            ?>
+            <!--<h2>25 April, 2015 / Townhall California</h2>-->
+                <!-- <h2> <?php //echo //date("d-m-Y",$event->getEventDateTime()) . "/" . $event->getEventLocation();?> </h2> -->
+                <h2> <?php echo $event->getEventDateTime() . " / " . $event->getEventLocation();?> </h2>
+                <h1> <?php echo $event->getEventTitle() .":". $event->getEventId();?> </h1>
+                <p> <?php echo "First &amp; " . $event->getEventSubTitle();?></p>
+                <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
+            <?php
+
+                }
+                else{
+            ?>
             <h2>25 April, 2015 / Townhall California</h2>
-            <!--<h2>25 April, 2015 / <?php //echo $event->eventLocation;?></h2>-->
-             <h1>Freelancer Conference 2015: <?php echo $eventID?></h1> 
+            <h1>Freelancer Conference 2015: <?php echo $eventID?></h1> 
             <!--<h1><?php //echo $event->eventTitle .": ". $event->eventID;?></h1> -->
             <!-- <h2>Testing: <?php //echo $event->eventID;?></h2> -->
             <p>First &amp; Largest Conference</p>
             
             <a class="btn btn-white" data-scroll href="#registration">Register Now</a>
-        
+            <?php
+                }
+            ?>
         </div>
     </header>
 
@@ -166,6 +191,56 @@ $eventID = $_GET['eventId'];
             </div>
 
             <div class="row">
+                <?php
+
+                    /*
+                    $speaker_fname;
+                    $speaker_lname;
+                    $speaker_occupation;
+                    $speaker_position;
+                    */
+                    for($var = 0; $var < $event->getSpeakerInstance()->numSpeakers; $var++)
+                    {
+                       //echo "HEY !! ->" . $event->getSpeakerInstance()->getFirstName($var) ." <br>" ;
+                       /*
+                       $event->getSpeakerInstance()->$lastName[$var] ." ". 
+                       $event->getSpeakerInstance()->$occupation[$var] ." ". 
+                       $event->getSpeakerInstance()->$position[$var] ."<br>";
+                       */ 
+                       //echo "HEY!! <br>";
+                       //echo $event->getSpeakerInstance()->numSpeakers . "<br>";
+                    //}
+                ?>
+                <div class="col-md-6">
+                    <div class="speaker">
+
+                        <figure>
+                            <img alt="" class="img-responsive center-block" src="assets/images/speakers/speaker-1.jpg">
+                        </figure>
+
+                        <h4>
+                        <?php echo $event->getSpeakerInstance()->getFirstName($var) ." ". $event->getSpeakerInstance()->getLastName($var)?></h4>
+
+                        <p>
+                        <?php
+                           echo $event->getSpeakerInstance()->getOccupation($var) ." at ". $event->getSpeakerInstance()->getCompany($var)
+                        ?>    
+                        </p>
+                        <!--<p>CEO of Peren</p>-->
+
+                        <ul class="social-block">
+                            <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                            <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                            <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                            <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                        </ul>
+
+                    </div>
+                </div>
+                <?php
+                    }
+                ?>
+                <!--
                 <div class="col-md-4">
                     <div class="speaker">
 
@@ -184,9 +259,10 @@ $eventID = $_GET['eventId'];
                             <li><a href=""><i class="ion-social-googleplus"></i></a></li>
                         </ul>
 
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
-
+                    </div>
+                </div>
+                -->
+                <!--
                 <div class="col-md-4">
                     <div class="speaker">
 
@@ -205,8 +281,8 @@ $eventID = $_GET['eventId'];
                             <li><a href=""><i class="ion-social-googleplus"></i></a></li>
                         </ul>
 
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
+                    </div>
+                </div>
 
                 <div class="col-md-4">
                     <div class="speaker">
@@ -226,8 +302,9 @@ $eventID = $_GET['eventId'];
                             <li><a href=""><i class="ion-social-googleplus"></i></a></li>
                         </ul>
 
-                    </div><!-- /.speaker -->
-                </div><!-- /.col-md-4 -->
+                    </div>
+                </div>
+                -->
             </div><!-- /.row -->
 
             <div class="row">
@@ -290,6 +367,7 @@ $eventID = $_GET['eventId'];
                 </div>
             </div>
         </div>
+
     </section>
 
     <section id="registration" class="section registration">
@@ -307,12 +385,12 @@ $eventID = $_GET['eventId'];
                     </div>
                     <div class="col-sm-12">
                         <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Full Name" id="fullname" name="fullname" required>
+                            <input type="text" class="form-control" placeholder="First Name" id="firstname" name="firstname" required>
                         </div>
 
-                        <!--<div class="form-group">
-                            <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname" required>
-                        </div>-->
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Last Name" id="lastname" name="lastname" required>
+                        </div>
 
                         <div class="form-group">
                             <input type="email" class="form-control" placeholder="Email" id="email" name="email" required>

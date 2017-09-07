@@ -28,12 +28,12 @@ class Connection
     {
         //create connection
         $this->conn = new mysqli($this->serverName,$this->userName,$this->password,$this->dbname);
-        echo "Construct 1!!";
+        echo "Construct 1!! <br>";
         if($this->conn->connect_error)
         {
             die("Connection Failed: ". $this->conn->connect_error);
         }
-        echo "Connection Successful";
+        echo "Connection Successful <br>";
 
         //Note on the object-oriented example above: $connect_error was broken until PHP 5.2.9 and 5.3.0.
         //If you need to ensure compatibility with PHP versions prior to 5.2.9 and 5.3.0, use the following 
