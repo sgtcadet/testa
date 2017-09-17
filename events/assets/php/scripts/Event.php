@@ -103,7 +103,8 @@ class Event
     //var $connect  = new Connection("nvml");
     function __construct ()
     {
-        $this->connect = new Connection("nvml");
+        //$this->connect = new Connection("nvml");
+        $this->connect = new Connection("rfgd_20426852_nvml");
         $this->speaker = new Speaker();
         $this->schedule = new Schedule();
         $this->eventGoal = new Goal();

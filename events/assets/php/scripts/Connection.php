@@ -3,12 +3,18 @@
 //Create connection class
 class Connection 
 {
+    //var $serverName     =   "localhost";
+    //var $userName       =   "root";
+    //var $password       =   "";
+    //var $dbname         =   "nvml"; 
+     
+
     var $serverName     =   "localhost";
-    var $userName       =   "root";
-    var $password       =   "";
+    var $userName       =   "rfgd_20426852";
+    var $password       =   "ZLlIVC9x";
+    var $dbname         =   "rfgd_20426852_nvml";
 
     var $conn           =   "";
-    var $dbname         =   "nvml";    
 
     // default constructor
     function __construct() {
