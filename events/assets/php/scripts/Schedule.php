@@ -2,23 +2,36 @@
 	class Schedule 
 	{
 
-		private var $from;
-		private var $to;
-		private var $activity;
-		private var $speaker;
+		private $from;
+		private $to;
+		private $activity;
+		private $speakerFirstName;
+		private $speakerLastName;
+		private $description;
+		public $numSchedules;
 
 
+		public function __construct()
+		{
 
-
+		}
 		/*GETTERS & SETTERS*/
-		public function getFrom() { return $this->from;}
-		public function getTo() { return $this->to;}
-		public function getActivity() { return $this->activity;}
-		public function getSpeaker() { return $this->speaker;}
+		public function getFrom($index) { return $this->from[$index];}
+		public function getTo($index) { return $this->to[$index];}
+		public function getActivity($index) { return $this->activity[$index];}
+		public function getSpeaker($index) { return $this->speaker[$index];}
+		public function getDescription($index){return $this->description[$index];}
+		public function getSpeakerFirstName($index){ return $this->speakerFirstName[$index];}
+		public function getSpeakerLastName($index){ return $this->speakerLastName[$index];}
+		public function getSpeakerName($index){ return getSpeakerFirstName($index) . " " . getSpeakerLastName($index);}
 
-		public function setFrom($from) { $this->from = $from;}
-		public function setTo($to) { $this->to = $to;}
-		public function setActivity($activity) {$this->activity = activity;}
-		public function setSpeaker($speaker) { $this->speaker = $speaker;}
+
+		public function setFrom($pos,$value) { $this->from[$pos] = $value;}
+		public function setTo($pos,$value) { $this->to[$pos] = $value;}
+		public function setActivity($pos,$value) {$this->activity[$pos] = $value;}
+		public function setSpeaker($pos,$value) { $this->speaker[$pos] = $value;}
+		public function setDescription($pos,$value){$this->description[$pos] = $value;}
+		public function setSpeakerFirstName($pos,$value){$this->speakerFirstName[$pos] = $value;}
+		public function setSpeakerLastName($pos,$value){$this->speakerLastName[$pos]= $value;}
 	}
 ?>

@@ -1,6 +1,8 @@
 <?php
  require_once 'assets/php/scripts/Connection.php';
  require_once 'assets/php/scripts/Speaker.php';
+ require_once 'assets/php/scripts/Schedule.php';
+ require_once 'assets/php/scripts/Goal.php';
 
     // $string = "nvml";
     // $connect = new Connection::withDBname($string);
@@ -20,7 +22,8 @@ class Event
     private  $eventAbout         ="";
     private  $eventGoal;
     private  $eventGoalDescription = "";
-    private  $speaker;
+    private  $speaker; //Has-a(s) speacker
+    private  $schedule; //HAS-a(s) schedule
 
     /*
     * GETTERS
@@ -37,6 +40,8 @@ class Event
     public function getEventAbout(){return $this->eventAbout;}
     public function getEventGoalDescription(){return $this->eventGoalDescription;}
     public function getSpeakerInstance(){return $this->speaker;}
+    public function getScheduleInstance(){return $this->schedule;}
+    public function getGoalInstance(){return $this->eventGoal;}
 
     /*
     * SETTERS
@@ -49,12 +54,59 @@ class Event
     public function setEventAbout($eventAbout){ $this->eventAbout = $eventAbout;}
     public function setEventGoalDescription($eventGoalDescription){ $this->eventGoalDescription = $eventGoalDescription;}
 
+    public function getSchedules($eventID)
+    {
+        //$sql = "SELECT `time_from`, `time_to`, `activity`, `description`, `speaker_id` FROM `event_schedule` WHERE event_id = '$eventID';";
+
+        $sql = "SELECT event_schedule.time_from, event_schedule.time_to, event_schedule.activity, event_schedule.description, speaker.first_name, speaker.last_name FROM event_schedule INNER JOIN speaker on event_schedule.speaker_id = speaker.speaker_id WHERE event_schedule.event_id = '$eventID';";
+
+        $results = $this->connect->conn->query($sql);
+        if($results->num_rows > 0)
+        {
+            $pos = 0;
+            $this->getScheduleInstance()->numSchedules = $results->num_rows;
+            while($row = $results->fetch_assoc())
+            {
+                $this->getScheduleInstance()->setFrom($pos,$row['time_from']);
+                $this->getScheduleInstance()->setTo($pos,$row['time_to']);
+                $this->getScheduleInstance()->setActivity($pos,$row['activity']);
+                $this->getScheduleInstance()->setDescription($pos,$row['description']);
+                $this->getScheduleInstance()->setSpeakerFirstName($pos,$row['first_name']);
+                $this->getScheduleInstance()->setSpeakerLastName($pos,$row['last_name']);
+                $pos++;
+            }
+
+        }else
+        {
+            echo "NO SCHEDULES FOUND <br>";
+        }
+        //close connection
+    }
+
+    public function getGoals($eventID)
+    {
+        $sql = "SELECT `goal` FROM `event_goal` WHERE `event_id` = '$eventID';";
+
+        $results = $this->connect->conn->query($sql);
+        if($results->num_rows > 0)
+        {
+            $pos = 0;
+            $this->getGoalInstance()->numGoals = $results->num_rows;
+            while($row = $results->fetch_assoc())
+            {
+                $this->getGoalInstance()->setGoals($pos,$row['goal']);
+                $pos++;
+            }
+        }
+    }
 
     //var $connect  = new Connection("nvml");
     function __construct ()
     {
         $this->connect = new Connection("nvml");
         $this->speaker = new Speaker();
+        $this->schedule = new Schedule();
+        $this->eventGoal = new Goal();
     }
     //REMINDER: Fix this block above
     //Use class name as constructor name
@@ -91,18 +143,24 @@ class Event
             }
             //GET SPEAKERS
             $this->speaker->getSpeakers($this->eventID);
+            
 
             echo $result->num_rows . " results <br>";
-            //GET GOALS
+            
 
-            //GET SPEACKERS
+            //GET Schedules
+            $this->getSchedules($this->eventID);
+
+            //GET GOALS
+            $this->getGoals($this->eventID);
+
         }
         else
         {
             echo "0 results <br>";
         }
 
-        
+        //close connection
     }
 
  }

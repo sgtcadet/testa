@@ -28,6 +28,8 @@
 
 	
 	//$fullname = $firstname . " " . $lastname;
+
+	
 	//
 	// Add new user to the database and registered event
 	//
@@ -125,7 +127,7 @@
 					{
 						$user_id = $row['user_id'];
 					}
-					echo " $user_id <---- <br/>";
+					echo " User ID: $user_id <---- <br/>";
 					$sql2 = "INSERT INTO registered_event (registered_package,event_id,user_id) VALUES ('$package','$event',$user_id);";
 					if($connect->conn->query($sql2) === TRUE)
 					{
@@ -174,6 +176,7 @@
 						{
 							$form_data['success'] = false;
 						}
+
 						/*
 						if(mail('howardgrantjnr@gmail.com', "$fullname just registered for an event!", $message,"From: Bot"))
 						 	$form_data['success'] = true;
